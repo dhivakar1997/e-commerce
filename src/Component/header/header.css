@@ -1,0 +1,60 @@
+
+.wrapper{
+    /* border: 2px solid red; */
+    display: flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* position: fixed;
+    top:0 */
+    /* margin-bottom: 20px; */
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    margin: 15px 24px;
+}
+
+.fa-user-plus{
+    color: #FF9900;
+}
+
+.card{
+    padding: 20px 20px;
+}
+
+.solid-signin{
+    padding: 2px;
+    color: #FF9900;
+}
+
+.signin-icon{
+    color: #FF9900;
+}
+
+a:hover{
+   color: rgb(155, 175, 193);
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
