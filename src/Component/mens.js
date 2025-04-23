@@ -1,19 +1,22 @@
 import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+import {useFetch} from "./customHooks";
 
 function Mens(){
-    const [Men , setMens] = useState([]);
+    // const [Men , setMens] = useState([]);
 
-    useEffect(() => {
-        fetch("https://fakestoreapi.com/products/category/men's%20clothing")
-        .then(Response => Response.json())
-        .then(json => setMens(json))
-    },[])
+    // useEffect(() => {
+    //     fetch("https://fakestoreapi.com/products/category/men's%20clothing")
+    //     .then(Response => Response.json())
+    //     .then(json => setMens(json))
+    // },[])
+
+    const [cate_fetch] = useFetch ("https://fakestoreapi.com/products/category/men's%20clothing");
 
     return(
         <>
           <div className="d-flex justify-content-center gap-4 my-4">
-          {Men.map((v,i) => {
+          {cate_fetch.map((v,i) => {
            return (
             <>  
             <Link to={`/${v.id} `}>

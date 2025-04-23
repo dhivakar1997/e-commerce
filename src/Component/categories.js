@@ -6,27 +6,29 @@ import Mens from '../../src/./assests/amazonmens.jpg'
 import Womens from '../../src/./assests/amazonwomens.jpg';
 import { Link } from "react-router-dom"; 
 import './header/header.css'
+import {useFetch } from "./customHooks";
 
 function Categories(){
 
-  const [count, setCount] = useState([]);
+  // const [count, setCount] = useState([]);
 //   const images ={
 //     "electronics": Electron,
 //     "jewelery" : Jewels,
 //     "men's clothing": Mens,
 //     "women's clothing": Womens
 // };
+   const [cate_fetch] = useFetch('https://fakestoreapi.com/products/categories');
 
-  useEffect(() => {
-    fetch('https://fakestoreapi.com/products/categories')
-    .then(response => response.json())
-    .then(json => setCount(json))
-  },[])
+  // useEffect(() => {
+  //   fetch('https://fakestoreapi.com/products/categories')
+  //   .then(response => response.json())
+  //   .then(json => setCount(json))
+  // },[])
 
   return (
     <>
        <div className="categories d-flex justify-content-lg-end gap-4 my-5 p-2 ms-1">
-         {count.map((v) => {
+         {cate_fetch.map((v) => {
           return (
             <>
             {/* <div className="d-flex align-items-end"> */}

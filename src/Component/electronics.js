@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from "react";
 import './header/header.css'
 import { Link } from "react-router-dom";
+import {useFetch} from "./customHooks";
 
 function Electronics(){
-    const [Electrons, setElectronics] = useState([]);
+    // const [Electrons, setElectronics] = useState([]);
 
-    useEffect(() => {
-        fetch('https://fakestoreapi.com/products/category/electronics')
-        .then(Response => Response.json())
-        .then(json => setElectronics(json))
-    },[])
+    // useEffect(() => {
+    //     fetch('https://fakestoreapi.com/products/category/electronics')
+    //     .then(Response => Response.json())
+    //     .then(json => setElectronics(json))
+    // },[])
+
+    const [cate_fetch] = useFetch ('https://fakestoreapi.com/products/category/electronics');
 
 
     return(
         <>
           <div className="d-flex justify-content-center gap-4 my-4">
-          {Electrons.map((v,i) => {
+          {cate_fetch.map((v,i) => {
            return (
             <>  
             <Link to={`/${v.id} `}>
