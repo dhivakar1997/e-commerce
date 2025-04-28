@@ -1,0 +1,225 @@
+.saleimg{
+    width:90%;
+    margin: auto;
+}
+.saleimg img{
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 20px
+}
+.categoriecart {
+    width: 8rem;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.categoriecart img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}
+
+.categoriecart:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.linknavi {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.productall_child {
+    width: 15rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 8px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: white;
+    
+}
+
+.productall_child:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 13px;
+    transform: scale(1.1);
+}
+
+.productall_child img:hover {
+    transform: scale(1.2);
+}
+
+.text-truncate {
+    text-align: center;
+}
+
+.productall_child img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+    mix-blend-mode: darken;
+    padding: 10px 0px;
+    margin-bottom: 25px;
+}
+
+.fa-star {
+    color: white;
+    margin-left: 2px;
+    font-size: small;
+
+}
+
+.star {
+    background-color: #388e3c;
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: white;
+    margin-right: 10px;
+}
+.sm-nav{
+    background-color:#3b49df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    border-radius: 0px 0px 50px 50px;
+    margin: 0px auto 40px auto;
+
+}
+.sm-nav ul,li{
+    display: inline;
+}
+.sm-nav a{
+    text-decoration: none;
+    color: inherit;
+    color: rgba(255, 255, 255, 0.731);
+    
+}
+.sm-nav a:hover{
+    color: white;
+
+}
+/* products edit */
+.procts_edit{
+    background-color: #3b49df;
+    padding: 20px;
+    margin: 10px 80px;
+    border-radius: 20px;
+}
+
+.procts_edit table,th,td{
+    border: 3px solid rgba(0, 0, 0, 0.338);
+    border-collapse: collapse;
+    padding: 7px;
+    text-align: center;
+}
+.procts_edit table{
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+.table_edit{
+    width: 300px;
+}
+.ed_btn{
+    outline: none;
+    border: none;
+    background-color: #388e3c;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+
+}
+.ed_btn:hover{
+    background-color: #00ff0d;
+    color: black;
+    border-radius: 15px;
+}
+.del_btn{
+    outline: none;
+    border: none;
+    background-color:brown;
+    padding: 2px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.del_btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: black;
+    border-radius: 15px;
+}
+/* edit products */
+.edit_productsdetails{
+    background-color: rgb(0 0 0 / 0.5);
+    width: 100%;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+}
+.edit_productsdetails_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.edit_productsdetails_container input{
+    background-color: white;
+    outline: none;
+    width: 350px;
+    height: 40px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: black;
+    margin: 10px 0px;
+}
+.edit_content{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    align-items: center;
+}
+@media screen and (max-width:630px) {
+    /* .categoriecart {
+        overflow: hidden;
+    } */
+    .categoriecartres{
+        /* background-color: #00ff0d;
+        overflow-x:scroll;
+        justify-content: start; */
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: start !important;
+        scrollbar-width: none;
+    }
+    .categoriecartres p,hr{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .sm-nav{
+        width: 80%;
+    }
+    .sm-nav li{
+        font-size: small;
+    }
+}
+@media screen and (max-width:430px){
+    .sm-nav li{
+        font-size: x-small;
+    }
+}

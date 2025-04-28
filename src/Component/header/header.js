@@ -21,7 +21,8 @@ function Header(){
               </div>
             </div>
           </div>
-          <div className="fa-user-plus d-flex px-5 ">
+          <div className="fa-user-plus d-flex px-4 ">
+           <Link to={'/editproducts'}> <a href="#" className="signin-icon fs-5 px-2"><i class="fa-solid fa-cart-shopping"><span className="solid-signin px-2 " >products</span></i></a></Link>
            <Link to={'/login'}> <a href="#" className="signin-icon fs-5"><i class="fa fa-user-plus " aria-hidden="true"><span className="solid-signin px-2 " >sign in</span></i></a></Link>
            <Link to={'/signup'}> <a href="#" className="signup fs-5"><i class="fa-solid fa-user-plus px-2"><span className="solid-signin px-2">sign up</span></i></a></Link> 
           </div>     

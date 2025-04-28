@@ -3,7 +3,7 @@ import '../Component/Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer bg-warning text-white pt-4 pb-3 mt-auto">
+    <footer className="footer bg-warning text-white pt-4 pb-3 mt-auto ">
       <div className="container text-center text-md-start">
         <div className="row">
           {/* Column 1 */}
