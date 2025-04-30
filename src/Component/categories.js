@@ -32,7 +32,8 @@ function Categories(){
           return (
             <>
             {/* <div className="d-flex align-items-end"> */}
-              <a className="text-decoration-none badge bg-primary p-2 fs-6" style= {{width: '9rem'}} href={`/${v}`}>{v}</a>
+              <Link className="text-decoration-none badge bg-primary p-2 fs-6" style= {{width: '9rem'}} to={`/${v}`}>{v}</Link>
+              
             {/* </div> */}
             {/* <Link to={`/${v} ` } > */}
           

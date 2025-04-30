@@ -15,7 +15,7 @@ function ProductsEdit() {
         image: ''
     });
 
-    const addclosehandle = () => setDisplayinput(false);
+    const addclosehandle = () => setDisplayinput(false) ;
     const addprod = () => setDisplayinput(true);
     const editclosehandle = () => setDisplayedit(false);
 

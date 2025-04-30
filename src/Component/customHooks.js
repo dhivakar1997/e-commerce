@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const useFetch = (url)=> {
     const [data, setData ] = useState([]);
-    
+    console.log("url",url);
     useEffect(() => {
         fetch(url)
         .then((res) => res.json())

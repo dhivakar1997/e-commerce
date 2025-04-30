@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 
 function ProductsAll(){
     const {id} = useParams();
+    console.log(id);
+    
     const [ productsAll , setProduct] = useState(null);
 
    useEffect(() => {
